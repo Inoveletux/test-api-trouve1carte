@@ -1,0 +1,190 @@
+/* https://www.palettable.io/999999-A9C9B4-3D4053 */
+
+/**** Chargement des polices en local */
+
+/*  https://google-webfonts-helper.herokuapp.com/fonts/space-mono?subsets=latin */
+/* space-mono-regular - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/space-mono/space-mono-v6-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("assets/fonts/space-mono/space-mono-v6-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("assets/fonts/space-mono/space-mono-v6-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("assets/fonts/space-mono/space-mono-v6-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("assets/fonts/space-mono/space-mono-v6-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/fonts/space-mono/space-mono-v6-latin-regular.svg#SpaceMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* space-mono-italic - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/space-mono/space-mono-v6-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("assets/fonts/space-mono/space-mono-v6-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("assets/fonts/space-mono/space-mono-v6-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("assets/fonts/space-mono/space-mono-v6-latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("assets/fonts/space-mono/space-mono-v6-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/fonts/space-mono/space-mono-v6-latin-italic.svg#SpaceMono")
+      format("svg"); /* Legacy iOS */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/space-mono/space-mono-v6-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("assets/fonts/space-mono/space-mono-v6-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("assets/fonts/space-mono/space-mono-v6-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("assets/fonts/space-mono/space-mono-v6-latin-700.woff") format("woff"),
+    /* Modern Browsers */
+      url("assets/fonts/space-mono/space-mono-v6-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/fonts/space-mono/space-mono-v6-latin-700.svg#SpaceMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/*        https://google-webfonts-helper.herokuapp.com/fonts/roboto-condensed?subsets=latin */
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/roboto-condensed/roboto-condensed-v19-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("assets/fonts/roboto-condensed/roboto-condensed-v19-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("assets/fonts/roboto-condensed/roboto-condensed-v19-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("assets/fonts/roboto-condensed/roboto-condensed-v19-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("assets/fonts/roboto-condensed/roboto-condensed-v19-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("assets/fonts/roboto-condensed/roboto-condensed-v19-latin-700.svg#RobotoCondensed")
+      format("svg"); /* Legacy iOS */
+}
+
+* {
+  transition: all 0.4s;
+  word-break: break-word;
+}
+
+body {
+  background-color: #4b5579;
+  color: #f2b880;
+  font-size: 18px;
+  font-family: "Space Mono", monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* a {
+  color: #9e2b25;
+}
+a:visited {
+  color: #232416;
+}
+a:active,
+a:hover {
+  color: #000000;
+} */
+
+.container {
+  /* Opacifier le fond du container de 20% */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(255,255,255,.2); */
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 0.5em 1em;
+}
+
+.myButton {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #3a8a9e;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.cardDiv {
+  margin-top: 10px;
+  color: black;
+}
+
+#retourCard {
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 15px solid black;
+  border-radius: 10px;
+  background-color: #b26d44;
+}
+#boutonCheckName {
+  margin-top: 10px;
+}
+
+#ccm {
+  align-self: flex-end;
+}
+/* #cardName {
+  align-self: flex-start;
+}  */
+#topSide {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
